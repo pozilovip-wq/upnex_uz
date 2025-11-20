@@ -55,17 +55,21 @@
     }
 
     .logo-box {
-      width: 76px;
-      height: 76px;
-      border-radius: 24px;
-      background: linear-gradient(145deg, #141b2f, #1f2937);
+      width: 86px;
+      height: 86px;
+      border-radius: 26px;
+      background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #f9fafb;
-      font-weight: 800;
-      font-size: 26px;
-      letter-spacing: 1px;
+      box-shadow: 0 15px 35px rgba(15, 23, 42, 0.16);
+      overflow: hidden;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .header-text h1 {
@@ -310,7 +314,10 @@
   <main class="page">
     <!-- HEADER -->
     <section class="card header-card">
-      <div class="logo-box">UP</div>
+      <div class="logo-box">
+        <!-- put upnex-logo.png file near index.html -->
+        <img src="upnex-logo.png" alt="UPNEX logo" />
+      </div>
       <div class="header-text">
         <h1>UPNEX</h1>
         <p>We are Upnex, You are Next</p>
@@ -320,20 +327,30 @@
 
     <!-- LINKS -->
     <section class="card link-list">
-      <a class="row-link" href="https://instagram.com/your_upnex" target="_blank" rel="noopener">
+      <a
+        class="row-link"
+        href="https://www.instagram.com/upnex.uz?igsh=MXhicTU4Z2hncm9ocg%3D%3D&utm_source=qr"
+        target="_blank"
+        rel="noopener"
+      >
         <div class="row-left">
           <div class="icon-pill">📸</div>
           <span>INSTAGRAM</span>
         </div>
-        <div class="row-right">@your_upnex</div>
+        <div class="row-right">@upnex.uz</div>
       </a>
 
-      <a class="row-link" href="https://t.me/your_upnex" target="_blank" rel="noopener">
+      <a
+        class="row-link"
+        href="https://t.me/upnexuz"
+        target="_blank"
+        rel="noopener"
+      >
         <div class="row-left">
           <div class="icon-pill">📨</div>
           <span>TELEGRAM</span>
         </div>
-        <div class="row-right">@your_upnex</div>
+        <div class="row-right">@upnexuz</div>
       </a>
 
       <a class="row-link" href="tel:+998504553355">
@@ -354,7 +371,8 @@
         </div>
         <h2>UPNEX nima qiladi?</h2>
         <p>
-          Biz O‘zbekiston yoshlarini xorijiy ta’lim imkoniyatlari bilan bog‘laymiz va har bir bosqichda yoningizda bo‘lamiz.
+          Biz O‘zbekiston yoshlarini xorijiy ta’lim imkoniyatlari bilan bog‘laymiz
+          va har bir bosqichda yoningizda bo‘lamiz.
         </p>
         <ul>
           <li>Universitet tanlash va hujjatlarni tayyorlash</li>
@@ -375,7 +393,12 @@
           (Mo‘ljal: Bobur haykal stoyankasi)
         </p>
         <br />
-        <a class="row-link" href="https://maps.google.com" target="_blank" rel="noopener">
+        <a
+          class="row-link"
+          href="https://maps.google.com"
+          target="_blank"
+          rel="noopener"
+        >
           <div class="row-left">
             <div class="icon-pill">📍</div>
             <span>GOOGLE XARITA ORQALI OCHISH</span>
@@ -420,7 +443,7 @@
               name="name"
               type="text"
               required
-              placeholder="Oyatillo Pozilov"
+              placeholder="Ismingiz"
             />
           </div>
           <div class="field">
